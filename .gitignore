@@ -42,6 +42,7 @@ venv.bak/
 # Documents & Reports
 *.pdf
 *.txt
+!requirements.txt
 *.doc
 *.docx
 *.ppt
