@@ -24,7 +24,7 @@ class TextPipeline:
 
         inputs = self.tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
         
-        with torch.no.grad():
+        with torch.no_grad():
             outputs = self.model(**inputs)
             
         probs = F.softmax(outputs.logits, dim=-1)[0].numpy()
